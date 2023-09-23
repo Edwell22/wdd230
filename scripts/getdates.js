@@ -6,9 +6,9 @@ const year = date.getFullYear();
 const currentYear = `${year}`;
 document.querySelector("#year").textContent = currentYear;
 
-// Function to fetch weather data from OpenWeatherMap API and display it
+
 function displayWeather() {
-  const apiKey = "YOUR_API_KEY"; // Replace with your OpenWeatherMap API key
+  const apiKey = "YOUR_API_KEY"; 
   const city = "Harare";
   const country = "ZW";
 
