@@ -1,0 +1,33 @@
+/* Phone view */
+@media only screen and (max-width: 37.5em) {
+    
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .first {
+        margin: 15px;
+    }
+
+    .second {
+        grid-column: 1;
+        margin: 15px;
+    }
+
+    .third {
+        grid-column: 1;
+        margin: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+    }
+}

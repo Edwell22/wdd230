@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway&family=Roboto:ital,wght@1,300&display=swap');
+
+body {
+    width: 100%;
+    line-height: 1.2;
+    margin: 8px;
+    height: 100%;
+}
+
+header, main, footer {
+    max-width: 800px;
+    margin: 1.25rem auto;
+    padding: 0.75rem;
+}
+
+header {
+    background-color: rgb(12, 72, 121);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+section {
+    border: 1px solid rgb(63, 61, 61);
+}
+
+footer {
+    background-color: rgb(12, 72, 121);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section p {
+    text-align: center;
+    font-family: 'Qucksand', sans-serif;
+
+}
+
+section p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+}
+
+section h3 {
+    font-family: 'Raleway', sans-serif;
+    background-color: darkgray;
+    background-size: cover;
+    color: white;
+    margin-top: 0px;
+    padding-inline-start: 10px;
+    font-size: 120%;
+}
+
+footer p:nth-last-of-type(1) {
+    color: rgb(45, 221, 10);
+}
+
+/* Desktop View */
+@media only screen and (min-width: 61em) {
+    
+    footer {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    section {
+        border-radius: 15px;
+    }
+
+    section h3 {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    
+    }
+
+    .first {
+        grid-column: 1;
+        margin: 5px;
+    }
+    
+    .second {
+        grid-column: 2;
+        margin: 5px;
+    }
+    
+    .third {
+        grid-column: 3;
+        margin: 5px;
+    }
+
+}
