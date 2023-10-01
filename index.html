@@ -1,36 +1,46 @@
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edwell Kakunguwo-WDD230 Frontend Development</title>
-    <meta name="description" content="Course Assignment Portal For Edwell Kakunguwo WDD 230: Web Frontend Development">
+    <title>Edwell Kakunguwo's Assignment Portal</title>
+    <link rel="icon" href="images/favicon (1).png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="description" content="Course Assignment Portal For Edwell Kakunguwo WDD 230: Web Frontend Development"/>
+    <meta property="og:type" content="website"/>
+    <meta propert="og:image" content="https://th.bing.com/th/id/R.dcca93a174eb91b4047a9483fda4c61c?rik=ew0sYy9pkHY39Q&pid=ImgRaw&r=0"/>
+    <meta property="og:url" content="https://edwell22.github.io/wdd230-1/"/>
     <meta name="author" content="Edwell Kakunguwo">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
-<body> 
+<body>
     <header>
-        <img src="images/edwell profil.jpg" alt="profil">
+        <img src="images/edwell profil.jpg" alt="MY profile photo">
         <h1>Edwell Kakunguwo</h1>
     </header>
     <nav>
         <ul>
-           <li><a href="#">Home</a></li> 
+           <li><a href="index.html">Home</a></li> 
            <li><a href="chamber/siteplan.html">Site Plan</a></li> 
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>WDD 230: Web Frontend Development</h2>
+    <h2>WDD 230: Web Frontend Development</h2>
         <hr>
+    <main>
         <section class="card">
             <h3>Learning Activities</h3>
             <ul>
-                <li>01: <a href="week01/holygrail.html">Holy Layout</a> | <a href="week01/jspen.html">JS Pen</a></li>
-                <li>02:</li>
-                <li>03:</li>
+                <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="lesson01/jspen.html">JS Pen</a> | <a href="lesson01/media-query.html">Media Query</a></li>
+                <li>02: <a href="lesson02/design.html">Design</a> | <a href="lesson02/design-principles.html">Design Principles</a></li> 
+                <li>03: <a href="images/">Combinators</a> | <a href="https://codepen.io/edwell22/pen/BavVzzr">Pseudo-Elements</a> | <a href="https://codepen.io/edwell22/pen/yLGEQaZ">Responsive Menu</a></li>
                 <li>04:</li>
                 <li>05:</li>
                 <li>06:</li>
@@ -42,15 +52,15 @@
         </section>
         <section class="card2">
            <h3>Information</h3>
-           <p>Harare ,Zimbabwe</p>
-           <p>Weather:Sunny</p>
-           <p>Page Visited:20 </p>
+           <p>Harare, Zimbabwe</p>
+           <p>#</p>
+           <p>#</p>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span><br> Edwell Kakunguwo <br> Zimbabwe</p>
+        <p>&copy; <span id="year"></span> <br> Edwell Kakunguwo <br> Zimbabwe</p>
         <p>Last Modification: <span id="currentdate"></span></p>
     </footer>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

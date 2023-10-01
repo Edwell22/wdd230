@@ -1,0 +1,56 @@
+@media screen and (min-width: 55em) {
+  
+    h1 {
+    line-height: 100px;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    font-size: 2rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  nav li:hover {
+    border: none;
+    background-color: black;
+  }
+
+  nav ul li a {
+    background: linear-gradient(90deg, transparent, #466ecc, transparent) bottom / var(--d, 0) 3px no-repeat;
+    transition: 0.3s;
+  }
+
+  nav li {
+    padding: 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card {
+    grid-column: span 1;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .card2 {
+    grid-column: span 1;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
+  }
+}

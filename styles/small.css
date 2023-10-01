@@ -1,0 +1,150 @@
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+    margin: 8px;
+}
+
+header,nav, main, footer {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0.75rem;
+}
+
+hr {
+    max-width: 750px;
+}
+
+img {
+    border-radius: 10px;
+    height: 150px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header {
+    background-color:rgb(12, 120, 163);
+    color: #dadfe2;
+    display: flex;
+    justify-content: space-evenly;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #dadfe2;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+nav ul li a:hover {
+    color: #466ecc;
+}
+
+nav ul {
+    display: block;
+    margin: auto;
+    padding: 0;
+}
+
+nav li:hover {
+    border: 1px solid gray;
+    background-color: rgb(37, 45, 52);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    --d: 75%;
+}
+
+nav {
+    background-color:rgb(59, 54, 54);
+    font-size: 1.5rem;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+section ul {
+    
+    margin: auto;
+    padding: 10px;
+}
+
+section ul li {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    padding: 5px;
+}
+
+section p {
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px;
+    font-weight: 550;
+}
+
+section p {
+    text-align: center;
+    font-weight: 800;
+}
+
+section {
+    border: 1px solid grey;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+section h3 {
+    background-color: rgb(12, 120, 163);
+    color: #dadfe2;
+    margin-top: 0px;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    background-color:rgb(12, 120, 163);
+    color: #dadfe2;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+footer p:nth-last-of-type(1) {
+    color: lime;
+}
