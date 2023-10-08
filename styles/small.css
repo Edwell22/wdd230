@@ -31,7 +31,7 @@ header {
     background-color:rgb(12, 120, 163);
     color: #dadfe2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
