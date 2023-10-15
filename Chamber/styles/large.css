@@ -1,0 +1,51 @@
+@media screen and (min-width: 55em) {
+
+    header {
+
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 5%; 
+        transition: all .50s ease;
+        
+    }
+    
+    nav ul {
+        display: flex;
+        
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav li {
+        display: flex;
+    }
+
+    nav a {
+        color: var(--text-color);
+        padding: 5px 0;
+        margin: 20px;
+    
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav a:hover {
+        color: #9ed0ff;
+        transition: .3s;
+    }
+
+    #first-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #second-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

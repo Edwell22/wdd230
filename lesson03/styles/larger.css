@@ -1,0 +1,20 @@
+@media screen and (min-width: 55em) {
+    section {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* margin: 0 auto; */
+    }
+  
+    .item {
+      width: 150px;
+      height: 150px;
+      padding: 1rem;
+      text-align: center;
+      border: 5px solid #000;
+      border-radius: 5px;
+    }
+  
+    img {
+      max-width: 700px;
+    }
+  }

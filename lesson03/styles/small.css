@@ -1,0 +1,139 @@
+* {
+    margin: 8px;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+  
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    font-family: "Aleo", serif;
+    background-color: rgb(12, 120, 163);
+    color: #f5f9ff;
+    padding: 1rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  #paragraph p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul li {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
+  
+  li::before {
+    content:"❓";
+  }
+  
+  h3,
+  h4 {
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    color: #020b12;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    font-weight: 600;
+  }
+  
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin: 0 auto; */
+  }
+  
+  .item {
+    width: 90px;
+    height: 90px;
+    padding: 1rem;
+    text-align: center;
+    border: 5px solid #000;
+    border-radius: 5px;
+    justify-self: center;
+  }
+  
+  hr {
+    margin: 35px 0;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  ul li {
+    text-align: center;
+    list-style-type: none;
+    font-weight: 500;
+  }
+  
+  .item-1 {
+    color: #f5f9ff;
+    background-color: #262626;
+  }
+  
+  .item-2 {
+    color: #09110c;
+    background-color: #f5f9ff;
+  }
+  
+  .item-3 {
+    color: #09110c;
+    background-color: #dedede;
+  }
+  
+  .item-4 {
+    color: #f5f9ff;
+    background-color:rgb(12, 120, 163);
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 250px;
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color:rgb(12, 120, 163);
+    color: #f5f9ff;
+    padding: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: "Aleo", serif;
+  }
+  
+  @media screen and (max-width: 30em) {
+    
+    img {
+      max-width: 200px;
+    }
+  
+    .item {
+      width: 70px;
+    height: 70px;
+    }
+    
+  }
