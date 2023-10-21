@@ -1,15 +1,15 @@
 // const options = { weekday: "long", day: "numeric", month: "long", year: "numeric" };
 // document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
 
-// const date = new Date();
+const date = new Date();
 
-// let year = date.getFullYear();
+let year = date.getFullYear();
 
-// let currentYear = `${year}`;
+let currentYear = `${year}`;
 
-// document.querySelector("#year").textContent = currentYear;
+document.querySelector("#year").textContent = currentYear;
 
-// document.getElementById("currentdate").textContent = document.lastModified;
+document.getElementById("currentdate").textContent = document.lastModified;
 
 // Hamburger Javascript
 

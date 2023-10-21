@@ -17,6 +17,7 @@ nav {
     font-family: var(--nav-font);
 }
 
+
 :root {
     --text-color: #f5f9ff;
     --bg-color: #262626;
@@ -26,10 +27,11 @@ nav {
     --heading-font: "Roboto Slab", serif;
     --join-font: "Gabarito", sans-serif;
     --active-color: #94ff96;
+    --footer-font: "Roboto Mono", monospace;
 }
 
 header, footer {
-    background-color:#2b4147;
+    background-color: #232e3b;
     color: #f5f5f5;
 }
 
@@ -92,7 +94,7 @@ a {
 }
 
 .bottom-logo {
-    max-width: 80px;
+    max-width: 50px;
     border-radius: 50px;
 }
 
@@ -100,6 +102,39 @@ a {
 .footer-part1{
     display: inline-flex;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-part1 h3 {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+}
+
+.footer-part1 a {
+    font-family: var(--footer-font);
+    font-size: .85rem;
+}
+
+.footer-part1 p {
+    font-family: var(--footer-font);
+    font-size: .85rem;
+}
+
+.footer-part3 {
+    text-align: center;
+    font-family: var(--footer-font);
+    font-size: .8rem;
+}
+
+.address-section {
+    text-align: center;
+}
+.address-section a {
+    color: var(--text-color);
+}
+
+.address-section a::before {
+    content: "📍";
 }
 
 .address h3 {
@@ -127,7 +162,7 @@ a {
 }
 
 ul .active {
-    color: #f0ec0a;
+    color: gold;
 }
 
 .active::before {
@@ -205,7 +240,7 @@ ul .active {
 }
 
 .join {
-    background-color: #0c3e66;
+    background-color: #063152;
     color: var(--text-color);
     font-size: 18px;
     font-family: var(--join-font);
@@ -225,7 +260,6 @@ ul .active {
 }
 
 section {
-    /* border: 1px solid #dedede; */
     margin: 20px;
     background-color: #dedede;
     border-radius: 5px;
@@ -299,6 +333,14 @@ section p {
         display: flex;
     }
 
-    
-    
+}
+
+
+@media screen and (max-width:52em) {
+
+    .footer-part1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
