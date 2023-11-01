@@ -17,13 +17,22 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head> 
-<body>
+<body >
+    <div id="main">
     <header>
-        <img src="images/kings" alt="MY profile photo">
+        <img src="images/edwekings.webp" alt="MY profile photo">
         <h1>Edwell Kakunguwo</h1>
+     
     </header>
+
+    <div id="mode">🌑</div>
+    
+
     <nav>
-        <ul>
+        <button id="menu"></button>
+
+        <ul class="navigation">
+            
            <li><a href="index.html">Home</a></li> 
            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li> 
             <li><a href="Chamber/chamber-index.html">Chamber</a></li>
@@ -31,48 +40,64 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+          <source srcset="images/roma_small.webp" media="(max-width: 500px)">
+          <source srcset="images/hero-medium.webp" media="(max-width: 750px)">
+          <img src="images/roma_large.webp" width="900" alt="Portal Hero Image">
+        </picture>
+        <div class="herolabel">
+          <p>Rome Temple</p>
+        </div>
+      </div>
+    
     <h2>WDD 230: Web Frontend Development</h2>
         <hr>
-    <main>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="lesson01/jspen.html">JS Pen</a> | <a href="lesson01/media-query.html">Media Query</a></li>
-                <li>02: <a href="./Lesson02/designx.html">Design</a> | <a href="./Lesson02/design-principlesx.html">Design Principles</a></li> 
-                <li>03: <a href="images/Screenshot.png">Combinators</a> | <a href="https://codepen.io/edwell22/pen/BavVzzr">Pseudo-Elements</a> | <a href="https://codepen.io/ede/pen/yLGEQaZ">Responsive Menu</a>| 
-                    <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a> </li>
-                <li>04: <a href="https://codepen.io/edwell22/pen/ExGGBWb">Pseudo-Class</a> | <a href="./Chamber/chamber-index.html"> Chamber - Home-page</a></li>
-                <li>05: <a href="./Lesson05/bom.html">Bom Application</a> | <a href="./Chamber/chamber-index.html"> Chamber - Home-page update</a></li>
-                <li>06:</li>
-                <li>07:</li>
-                <li>08:</li>
-                <li>09:</li>
-                <li>10:</li>
-            </ul>
-        </section>
-        <section class="card2">
-           <h3>Information</h3>
-           <p>Harare, Zimbabwe</p>
-           <p>#</p>
-           <p>#</p>
-        </section>
-    </main>
-    <div class="map-wrapper">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.223071530734!2d31.03617307372799!3d-17.875019940243916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a37a414f7783%3A0xa1879ecb9ca6ca2!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2szw!4v1696250947026!5m2!1sen!2szw"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    <footer>
-        <p>&copy; <span id="year"></span> <br> Edwell Kakunguwo <br> Zimbabwe</p>
-        <p>Last Modification: <span id="currentdate"></span></p>
-    </footer>
+        <main id="bodyp">
+        
+
+            <section class="card" id="bdys">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01: <a href="lesson01/holygrail.html">Holy Layout</a> | <a href="lesson01/jspen.html">JS Pen</a> | <a href="lesson01/media-query.html">Media Query</a></li>
+                    <li>02: <a href="./Lesson02/designx.html">Design</a> | <a href="./Lesson02/design-principlesx.html">Design Principles</a></li> 
+                    <li>03: <a href="images/Screenshot.png">Combinators</a> | <a href="https://codepen.io/edwell22/pen/BavVzzr">Pseudo-Elements</a> | <a href="https://codepen.io/ede/pen/yLGEQaZ">Responsive Menu</a>| 
+                        <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a> </li>
+                    <li>04: <a href="https://codepen.io/edwell22/pen/ExGGBWb">Pseudo-Class</a> | <a href="./Chamber/chamber-index.html"> Chamber - Home-page</a></li>
+                    <li>05: <a href="./Lesson05/bom.html">Bom Application</a> | <a href="./Chamber/chamber-index.html"> Chamber - Home-page update</a></li>
+                    <li>06:</li>
+                    <li>07:</li>
+                    <li>08:</li>
+                    <li>09:</li>
+                    <li>10:</li>
+                </ul>
+            </section>
+            <section class="card2" id="secbdy">
+               <h3>Information</h3>
+               <p>Harare, Zimbabwe</p>
+               <p>#</p>
+               <p>#</p>
+            </section>
+        </main>
+        <div class="map-wrapper">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.223071530734!2d31.03617307372799!3d-17.875019940243916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a37a414f7783%3A0xa1879ecb9ca6ca2!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2szw!4v1696250947026!5m2!1sen!2szw"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        <footer id="king">
+            <p>&copy; <span id="year"></span> <br> Edwell Kakunguwo <br> Zimbabwe</p>
+            <p>Last Modification: <span id="currentdate"></span></p>
+        </footer>
+       
+    </div>
+      
     <script src="scripts/main.js"></script>
 </body>
 </html>                                                                                                                                                                                                                                  

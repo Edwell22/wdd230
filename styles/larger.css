@@ -54,3 +54,10 @@
     -moz-box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.75);
   }
 }
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}

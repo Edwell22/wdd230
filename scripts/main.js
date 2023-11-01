@@ -28,3 +28,36 @@ function initMap() {
 		center: location
 	});
 }
+
+
+
+// dark mode and light mode
+
+const modeButton = document.querySelector("#mode");
+const main = document.getElementById("main");
+const bdy = document.getElementById("bdys")
+// const secbdy = document.getElementById("secbdy")
+const kings = document.getElementById("king")
+
+modeButton.addEventListener("click", () => {
+	if (modeButton.textContent.includes("🌑")) {
+		main.style.background = "#000";
+		main.style.color = "#fff";
+		bdy.style.background = "#000";
+		bdy.style.color = "#fff";
+		secbdy.style.background = "#000";
+		secbdy.style.color = "#fff";
+	   
+		kings.style.background = "0000";
+		kings.style.color = "#fff";
+		modeButton.textContent = "🔆";
+	} else {
+		main.style.background = "#eee";
+		main.style.color = "#000";
+		bdy.style.background = "#000";
+		bdy.style.color = "#fff";
+		kings.style.background = "0000";
+		kings.style.color = "#fff";
+		modeButton.textContent = "🌑";
+	}
+});
