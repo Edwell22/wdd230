@@ -20,3 +20,5 @@ hamButton.addEventListener('click', () => {
 	navbar.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
