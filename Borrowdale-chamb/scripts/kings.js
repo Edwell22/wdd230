@@ -58,7 +58,7 @@ setTimestamp();
 // Members Dinamically
 
 const cardContainer = document.querySelector("#card-container");
-const membersUrl = "https://edwell22.github.io/wdd230/chamber/data/members.json";
+const membersUrl = "https://edwell22.github.io/wdd230/Borrowdale-chamb/data/members.json";
 
 async function getMembers() {
   try {
@@ -185,7 +185,7 @@ function displayForecast(forecastData) {
 
 /*ADVERTISEMENT*/
 
-const memberJson = "https://edwell22.github.io/wdd230/chamber/data/members.json";
+const memberJson = "https://edwell22.github.io/wdd230/Borrowdale-chamb/data/members.json";
 async function getSilverMembers(url) {
   const data = await fetch(url);
   const jsonData = await data.json();

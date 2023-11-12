@@ -1,0 +1,35 @@
+{
+    "familyName": "Kakunguwo",
+    "move": "04-06-2023",
+    "size": 5,
+    "bischopric-visit": true,
+    "familyMembers": [
+      {
+        "name": "Eckson Kakunguwo",
+        "gender": "Male",
+        "birthdate": "05-25-1976"
+      },
+      {
+        "name": "Ellen Munhanga",
+        "gender": "Female",
+        "birthdate": "04-18-1980"
+      },
+      {
+        "name": "Edwell Kakunguwo",
+        "gender": "male",
+        "birthdate": "09-25-2001"
+      },
+      {
+        "name": "Ecknetty Kakunguwo",
+        "gender": "Female",
+        "birthdate": "08-31-2006"
+      },
+
+      {
+        "name": "Edward Kakunguwo",
+        "gender": "Male",
+        "birthdate": "08-18-2012"
+      }
+    ]
+  }
+  

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    background-color: azure;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.6rem;
+}
+
+section {
+    background-color: #145fbb;
+    padding-bottom: 2rem;
+}
+
+
+
+h2 {
+    color: antiquewhite;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+#cards {
+    
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem;
+}

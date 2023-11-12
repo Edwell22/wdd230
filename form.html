@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="WDD 230 - Forms" >
+    <meta name="author" content="Edwell Kakunguwo">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Form</title>
+</head>
+<body>
+    
+    <div id="passwordMessage"></div>
+    <form method="get" action="record.html">
+        <fieldset>
+            <legend>User Information*</legend>
+            <label class="top">Username*<input type="text" name="uname" id="username"></label>
+            <label class="top">Password*<input type="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" id="password" required></label>
+            <label class="top">Password repeated*<input type="password" name="password" id="passwordR" required></label>
+            <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" id="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+
+            <div id="showRangeValue">0</div>
+            <label class="top">Page Rating<input type="range" name="range" id="rangeInput"  min="1" max="10" value="0" step="1"></label>
+
+            
+        </fieldset>
+
+        <input type="submit" value="Send Information"  class="submitBtn">
+    </form>
+    
+
+    <script src="scripts/forms.js"></script>
+</body>
+</html>
