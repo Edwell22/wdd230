@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover Page - Borrowdale Chamber of Commerce ">
+    <meta name="author" content="Edwell Kakunguwo">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta property="og:url" content="https://edwell22.github.io/wdd230/chamber/">
+    <meta property="og:title" content="BORROWDALE CHAMBER OF COMMERCE">
+    <meta property="og:description" content="Borrowdale Chamber of Commerce Home Page for WDD230 Edwell Kakunguwo">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i1.wp.com/www.thezimbabwemail.com/wp-content/uploads/2020/09/Harare-2.png?fit=1024%2C684&ssl=1 ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather:ital,wght@0,400;1,900&family=Noticia+Text:ital@0;1&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="icon" href="images/favcon.ico.webp">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <title>Discover - Borrowdale Chamber of Commerce</title>
+</head>
+<body>
+    
+    <header>
+        
+        <img src="images/logop.webp" alt="logo">
+        <button id="menu"></button>
+        
+    </header>
+    <nav>
+        <ol>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+        </ol>
+    </nav>
+
+    <main id="discover-main">
+        <h1 id="gallery-title">Discover important Places in Borrowdale</h1>
+        <div id="container">
+            
+            <div id="gallery">
+                
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/harare_large.webp">
+                    <img src="images/harare_small.webp" alt="Malecon" loading="lazy" >
+                    <figcaption>Harare</figcaption>
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/large-banks.webp">
+                    <img src="images/small-banks.webp" alt="banks" loading="lazy" width="250" height="150">
+                    <figcaption>Banks</figcaption>
+                </picture>
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/large-historical.webp">
+                    <img src="images/small-historical.webp" alt="historical center" loading="lazy" width="250" height="150">
+                    <figcaption>Historical Center</figcaption>
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/borrowdale-large.webp">
+                    <img src="images/borrowdale-small.webp" alt="Borrowdale" loading="lazy" width="250" height="150">
+                    <figcaption>Borrowdale</figcaption>
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/large-digital.webp" width="250" height="150">
+                    <img src="images/small-digital.webp" alt="Money" loading="lazy">
+                    <figcaption> Digital Currency</figcaption>
+                </picture>
+                
+                <picture>
+                    <source media="(min-width: 960px)" srcset="images/Inyanga-large.webp">
+                    <img src="images/Inyanga-small.webp" alt="Inyanga" loading="lazy" width="250" height="150">
+                    <figcaption>Inyanga</figcaption>
+                </picture>
+                
+            </div>
+        
+
+
+            <aside id="aside-discover">
+            <section id="demografics"> 
+                <h2>Demografics</h2>
+                <p>Borrowdale: 10 674 755 habitants</p>
+                <p>88% works in Services and Commerce activities</p>
+             </section>
+             <section id="economy">
+                <h2>Economy</h2>
+                <p> Harare is one most busiest city in Zimbabwe where different economic activities takes place.</p>
+            </section>
+             <section id="map">
+                <h2>Map</h2>
+                <h2>Borrowdale business center</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.223071530734!2d31.03617307372799!3d-17.875019940243916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a37a414f7783%3A0xa1879ecb9ca6ca2!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2szw!4v1696250947026!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </aside>
+        </div>
+
+    </main>
+
+    <div id="last-visit"></div>
+    <footer>
+        
+            <p>&copy;<span id="year"></span>&bull; Edwell kakunguwo - Harare</p>
+            <p  > last Modification: <span id="lastModified"></span></p>
+            <p>Borrowdale Chamber Of Commerce - (+263)718 666 296 </p>
+            <p>Web Site Made by Edwell Kakunguwo - WDD230</p>
+    </footer>
+    <script src="scripts/kings.js"></script>
+</body>
+</html>

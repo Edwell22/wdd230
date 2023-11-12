@@ -84,8 +84,14 @@ main {
 	font-family:"Great Vibes", serif;
 }
 
-
+/* Number of visits*/
   
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
 
 nav ul li {
     text-align: center;
