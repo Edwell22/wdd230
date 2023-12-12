@@ -142,7 +142,8 @@ const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?lat=49.74&lon=6.63&appid=76cd0cc1ffbcb7fcbc8193cf2c4758e5";
+"https://api.openweathermap.org/data/2.5/weather?lat=-12.09&lon=-77.06&appid=d95dddf55be4cf8701c5a27d5d84f3cc&units=imperial";
+
 
 async function apiFetch() {
   const response = await fetch(url);
@@ -182,6 +183,33 @@ function displayForecast(forecastData) {
     }
   });
 }
+
+// dark mode and light mode
+
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+const bdy = document.querySelector("body");
+const kings = document.querySelector("#kings");
+
+modeButton.addEventListener("click", () => {
+    if (modeButton.textContent.includes("🌑")) {
+        main.style.background = "#000";
+        main.style.color = "#fff";
+        bdy.style.background = "#000";
+        bdy.style.color = "#fff";
+        kings.style.background = "#000";
+        kings.style.color = "#fff";
+        modeButton.textContent = "🔆";
+    } else {
+        main.style.background = "#eee";
+        main.style.color = "#000";
+        bdy.style.background = "#fff";
+        bdy.style.color = "#000";
+        kings.style.background = "#fff";
+        kings.style.color = "#000";
+        modeButton.textContent = "🌑";
+    }
+});
 
 /*ADVERTISEMENT*/
 

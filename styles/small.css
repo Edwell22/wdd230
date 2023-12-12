@@ -204,6 +204,8 @@ footer p:nth-last-of-type(1) {
     color: lime;
 }
 
+  
+
 /* Styles for small screens */
 #menu::before {
     content: "☰";
@@ -263,4 +265,12 @@ footer p:nth-last-of-type(1) {
       margin-right: 10px;
       color:rgb(37, 45, 52);
     }
+
+    #weather-icon {
+      background: aquamarine !important;
+      /* float: right; */
+      margin: 0 0 1rem 1rem;
+      border: 1px solid #333;
+      box-shadow: 0 0 15px #777;
+  }
   }

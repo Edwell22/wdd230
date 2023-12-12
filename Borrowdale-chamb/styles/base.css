@@ -33,6 +33,17 @@ header #menu::before {
 	content: "☰";
     
 }
+
+/*Dark Mode*/
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+    padding-right: 60px;
+}
+
 /*NAV*/
 nav {
    
@@ -85,7 +96,16 @@ section .section-header h2 {
     ;
 }
 
-
+.social {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #5C5C5C;
+    gap: 10px;
+     
+}
 
 #hero-img-container {
     border: 1px solid black;
