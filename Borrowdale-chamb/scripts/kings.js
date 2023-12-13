@@ -185,31 +185,62 @@ function displayForecast(forecastData) {
 }
 
 // dark mode and light mode
-
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
-const bdy = document.querySelector("body");
+const body = document.querySelector("body");
 const kings = document.querySelector("#kings");
+const sections = document.querySelectorAll("section");
+const socialIcons = document.querySelectorAll(".social");
+const asideElement = document.querySelector("aside");
 
 modeButton.addEventListener("click", () => {
     if (modeButton.textContent.includes("🌑")) {
-        main.style.background = "#000";
-        main.style.color = "#fff";
-        bdy.style.background = "#000";
-        bdy.style.color = "#fff";
-        kings.style.background = "#000";
-        kings.style.color = "#fff";
-        modeButton.textContent = "🔆";
+        enableDarkMode();
     } else {
-        main.style.background = "#eee";
-        main.style.color = "#000";
-        bdy.style.background = "#fff";
-        bdy.style.color = "#000";
-        kings.style.background = "#fff";
-        kings.style.color = "#000";
-        modeButton.textContent = "🌑";
+        enableLightMode();
     }
 });
+
+function enableDarkMode() {
+    main.style.background = "#000";
+    main.style.color = "#fff";
+    body.style.background = "#000";
+    body.style.color = "#fff";
+    kings.style.background = "#000";
+    kings.style.color = "#fff";
+    asideElement.style.background = "#000";
+    asideElement.style.color = "#fff";
+    socialIcons.forEach(icon => {
+        icon.style.background = "#000";
+        icon.style.color = "#fff";
+    });
+
+    sections.forEach(section => {
+        section.style.background = "#000";
+        section.style.color = "#fff";
+    });
+    modeButton.textContent = "🔆";
+}
+
+function enableLightMode() {
+    main.style.background = "";
+    main.style.color = "";
+    body.style.background = "";
+    body.style.color = "";
+    kings.style.background = "";
+    kings.style.color = "";
+    asideElement.style.background = "";
+    asideElement.style.color = "";
+    socialIcons.forEach(icon => {
+        icon.style.background = "";
+        icon.style.color = "";
+    });
+    sections.forEach(section => {
+        section.style.background = "";
+        section.style.color = "";
+    });
+    modeButton.textContent = "🌑";
+}
 
 /*ADVERTISEMENT*/
 
