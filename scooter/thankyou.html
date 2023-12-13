@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- head section with meta data -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/scoots-favicon-color.webp">
+    <title>Scoots Contact Us | Jeep Atv Scooter Rentals | Tourism | Home Page</title>
+    <meta name="author" content="Lenora Stevens">
+    <meta name="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta property="og:title" content="Lenora Stevens - Scoots - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:image"
+        content="https://lenorastevens.github.io/wdd230/scoots/images/scoots-high-resolution-logo.png">
+    <meta property="og:url" content="https://lenorastevens.github.io/wdd230/scoots/index.html">
+</head>
+
+<!-- body section -->
+
+<body>
+    <!-- header section -->
+    <header class="top-nav">
+        <a id="logo" href="index.html">
+            <img id="logo-link" src="images/logo-no-background.webp" alt="Scoots Company Logo" width="400" height="135">
+        </a>
+
+        <!-- nav links -->
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rental Pricing</a>
+            <a href="reservations.html">Make a Reservation</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="thankyou.html" class="active">Thank You!</a>
+        </nav>
+
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
+    </header>
+
+    <div id="hero">
+        <!-- hero scooter image -->
+        <div id="hero-box">
+            <picture>
+                <source srcset="images/colorful-jeep-large.webp" media="(min-width: 960px)">
+                <source srcset="images/colorful-jeep-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/colorful-jeep-small.webp" alt="Colorful Wall and Jeep" width="560"
+                    height="315">
+            </picture>
+        </div>
+
+        <!-- Hero Message -->
+        <section id="hero-msg">
+            <h1 class="home-motto">Thank You!</h1>
+            <h2 id="last-motto" class="home-motto">Information received. We will contact you soon!</h2>
+        </section>
+    </div>
+
+    <footer id="last">
+        <!-- attributions link -->
+        <a id="resources" href="Resources.md">Attributions Page</a>
+
+        <!-- personal identifying info -->
+        <h3 id="name" class="bottom">&copy; <span id="year"></span> |*| Lenora Stevens |*| WDD 230 Final Project</h3>
+
+        <!-- social media links -->
+        <a href="https://facebook.com" target="_blank">
+            <img class="social-media" src="images/facebook-small.webp" alt="Facebook Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img class="social-media" src="images/x-icon-small.webp" alt="X Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img class="social-media" src="images/instagram-small.webp" alt="Instagram Icon" width="130" height="100"
+                loading="lazy">
+        </a>
+    </footer>
+
+    <!-- scripts -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/date.js"></script>
+</body>
+
+</html>

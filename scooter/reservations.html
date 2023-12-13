@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- head section with meta data -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/scoots-favicon-color.webp">
+    <title>Scoots Reservations | Jeep Atv Scooter Rentals | Tourism | Home Page</title>
+    <meta name="author" content="Lenora Stevens">
+    <meta name="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta property="og:title" content="Lenora Stevens - Scoots - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:image"
+        content="https://lenorastevens.github.io/wdd230/scoots/images/scoots-high-resolution-logo.png">
+    <meta property="og:url" content="https://lenorastevens.github.io/wdd230/scoots/index.html">
+</head>
+
+<!-- body section -->
+
+<body>
+    <!-- header section -->
+    <header class="top-nav">
+        <a id="logo" href="index.html#hero-box">
+            <img id="logo-link" src="images/logo-no-background.webp" alt="Scoots Company Logo" width="300" height="101">
+        </a>
+
+        <!-- nav links -->
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rental Pricing</a>
+            <a href="reservations.html" class="active">Make a Reservation</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
+    </header>
+
+    <div id="hero">
+        <!-- hero scooter image -->
+        <div id="hero-box">
+            <picture>
+                <source srcset="images/beach-sign-large.webp" media="(min-width: 960px)">
+                <source srcset="images/beach-sign-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/beach-sign-small.webp" alt="Directional Signs" width="560" height="357">
+            </picture>
+        </div>
+
+        <!-- Hero Message -->
+        <section id="hero-msg">
+            <h1 class="home-motto">Complete Reservation Request Below</h1>
+        </section>
+    </div>
+
+    <main class="info-grid">
+        <section id="agreement">
+            <img id="signed" class="card-img" src="images/agree.webp" alt="Contract Agreement Checkbox" width="600"
+                height="400" loading="lazy">
+            <h2>Rental Agreement</h2>
+            <ul id="contract">
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+            <div id="confirmed">
+                <label><input type="checkbox" name="confirmed"> I agree to the rental
+                    terms </label>
+            </div>
+        </section>
+
+        <section id="reserve-form">
+            <h2>Reservation Form</h2>
+            <form id="rental-form" method="get" action="thankyou.html">
+                <fieldset id="personal-info">
+                    <legend class="legend">Renter Details</legend>
+                    <label class="renter">*Full Name: <input type="text" id="fullname" name="fullname" required
+                            pattern="[A-Za-z ]*" title="Letters and spaces only"></label>
+                    <label class="renter">*Mobile Number: <input type="tel" id="mobile" name="mobile"
+                            pattern="^[0-9\- ]{10}$" title="Valid 10 digit mobile number" required></label>
+                    <label class="renter">*Email: <input type="email" id="email" autocomplete="email"
+                            pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" required></label>
+                    <label class="renter">*State: <select id="state" name="state" required></select></label>
+                    <label class="renter">*Country: <select id="country" name="country" required></select></label>
+                </fieldset>
+
+                <fieldset id="rental-details">
+                    <legend class="legend">Equipment</legend>
+                    <label class="details">*Rental Date: <input type="date" id="rent-date" name="rent-date" value=""
+                            required></label>
+                    <label class="details"><input type="radio" id="half-day" name="half-day" value="half-day">
+                        Half-day</label>
+                    <label class="details"><input type="radio" id="full-day" name="full-day" value="full-day"> Full
+                        Day</label>
+                    <label class="vehicle">*Select Model
+                        <select name="vehicle" required>
+                            <option></option>
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx150">Honda PCX150 Scooter</option>
+                            <option value="pioneer">Honda Pioneer ATV</option>
+                            <option value="jeep4dr">Jeep Wrangler - 4 door</option>
+                            <option value="jeep2dr">Jeep Wrangler - 2 door</option>
+                        </select>
+                    </label>
+                    <label class="quantity">*Qty
+                        <select name="quantity" required>
+                            <option> </option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>8</option>
+                            <option>10</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset id="extra-info">
+                    <legend class="legend">Special Arrangments</legend>
+                    <label class="special">Cruise Line: <input type="text" id="cruiseline" name="cruiseline"></label>
+                    <label class="special">Accomodation Requests: <textarea id="description" name="description"
+                            rows="4"></textarea></label>
+                </fieldset>
+                <input type="submit" value="Complete Reservation" name="submit" class="submitBtn">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- attributions link -->
+        <a id="resources" href="resources.html">Attributions Page</a>
+
+        <!-- personal identifying info -->
+        <h3 id="name" class="bottom">&copy; <span id="year"></span> |*| Lenora Stevens |*| WDD 230 Final Project</h3>
+
+        <!-- social media links -->
+        <a href="https://facebook.com" target="_blank">
+            <img class="social-media" src="images/facebook-small.webp" alt="Facebook Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img class="social-media" src="images/x-icon-small.webp" alt="X Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img class="social-media" src="images/instagram-small.webp" alt="Instagram Icon" width="130" height="100"
+                loading="lazy">
+        </a>
+    </footer>
+
+    <!-- scripts -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/states.js"></script>
+    <script src="scripts/country.js"></script>
+</body>
+
+</html>

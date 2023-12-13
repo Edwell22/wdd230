@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- head section with meta data -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f5f5">
+    <link rel="icon" href="images/scoots-favicon-color.webp">
+    <title>Impala Home | Jeep Atv Impala Car Rentals | Tourism | Home Page</title>
+    <meta name="author" content="Edwell Kakunguwo">
+    <meta name="description" content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Merriweather:ital,wght@0,400;1,900&family=Noticia+Text:ital@0;1&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <meta property="og:title" content="Edwell Kakunguwo - Impala Car Rental - WDD 230">
+    <meta property="og:type" content="website">
+    <meta property="description"
+        content="This is a practice project for the final for WDD 230 - Web Frontend Development course at BYU-Idaho.">
+    <meta property="og:image" content="https://lenorastevens.github.io/wdd230/scoots/images/logo-no-background.webp">
+    <meta property="og:url" content="https://edwell22.github.io/wdd230/scoots/index.html">
+</head>
+
+<!-- body section -->
+
+<body>
+    <!-- header section -->
+    <header class="top-nav">
+        <a id="logo" href="index.html#hero-box">
+            <img id="logo-link" src="images/logo-no-background.webp" alt="Scoots Company Logo" width="300" height="101">
+        </a>
+
+        <!-- nav links -->
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rental Pricing</a>
+            <a href="reservations.html">Make a Reservation</a>
+            <a href="contactUs.html">Contact Us</a>
+        </nav>
+
+        <!-- hamberger button -->
+        <button id="menu" title="Hamburger Menu"></button>
+    </header>
+
+    <div id="hero">
+        <!-- hero scooter image -->
+        <div id="hero-box">
+            <picture>
+                <source srcset="images/purple-scooters-large.webp" media="(min-width: 960px)">
+                <source srcset="images/purple-scooters-medium.webp" media="(min-width: 560px)">
+                <img id="hero-img" src="images/purple-scooters-small.webp" alt="Purple Scooters" width="500"
+                    height="333">
+            </picture>
+        </div>
+
+        <!-- Hero Message -->
+        <section id="hero-msg">
+            <h1 class="home-motto">Time To Explore</h1>
+
+            <!-- reservation link -->
+            <div class="button-box">
+                <a class="reservations" href="reservations.html#reserve-form">Reserve Now</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- main section -->
+    <main class="info-grid">
+        <!-- scooter card -->
+        <section class="scooter-card">
+            <img class="card-img" src="images/scooter-beachside.webp" alt="Scooter with a Beach view" width="600"
+                height="400" loading="lazy">
+            <a href="rentals.html#scooter-price">
+                <img class="icon" src="images/scooter-icon.webp" alt="Scooter Icon" title="Scooter Pricing" width="100"
+                    height="100"></a>
+            <h2>Scooters starting at $20/3hr</h2>
+            <p>Scoooters are small and easy to maneuver. You can zip around town and check out the
+                shopping scene, or find a long road and cruise with the wind in your hair. Bring your imagination!</p>
+        </section>
+
+        <!-- atv card -->
+        <section class="atv-card">
+            <img class="card-img" src="images/atv-cliffside.webp" alt="ATV on beach" width="600" height="400"
+                loading="lazy">
+            <a href="rentals.html#atv-price">
+                <img class="icon" src="images/atv-icon.webp" alt="ATV Icon" title="ATV Pricing" width="100"
+                    height="100"></a>
+            <h2>ATVs starting at $50/3hr</h2>
+            <p>A more rugged type of transportation, ATVs will take you down any trail and will give you access to more
+                remote parts of Cozumel. Pack a picnic and get down the trail with exploration as your only to-do list
+                item.</p>
+        </section>
+
+        <!-- jeep card -->
+        <section class="jeep-card">
+            <img class="card-img" src="images/jeep-beachside.webp" alt="Jeep on a Beach" width="600" height="400"
+                loading="lazy">
+            <a href="rentals.html#jeep-price">
+                <img class="icon" src="images/jeep-icon.webp" alt="Jeep Icon" title="Jeep Pricing" width="100"
+                    height="100"></a>
+            <h2>Jeeps starting at $60/3hr</h2>
+            <p>With an expanded capacity for passengers and gear, Jeep rentals expand your exploring options. A Jeep can
+                be used in any weather and still provide rugged off-road capabilities for your adventures.
+            </p>
+        </section>
+
+        <!-- weather card -->
+        <section id="weather" class="weather-card">
+            <h2>Weather</h2>
+            <div id="current-weather">
+                <h3 id="current">Current Weather</h3>
+                <div id="del-carmen" class="location-info">
+                    <h4 id="playa-curr">Harare</h4>
+                </div>
+                <div id="puerta-maya" class="location-info">
+                    <h4 id="puerta-curr">Bulawayo</h4>
+                </div>
+            </div>
+            <div id="forecast-container">
+                <h3 id="forecast">Tomorrow's Weather</h3>
+                <div id="del-carmen-forecast" class="location-forecast">
+                    <h4 id="playa-forecast"> Harare</h4>
+                </div>
+                <div id="puerta-maya-forecast" class="location-forecast">
+                    <h4 id="puerta-forecast">Bulawayo</h4>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- attributions link -->
+        <a id="resources" href="Resources.md">Attributions Page</a>
+
+        <!-- personal identifying info -->
+        <h3 id="name" class="bottom">&copy; <span id="year"></span> |*| Edwell Kakunguwo|*| WDD 230 Final Project</h3>
+
+        <!-- social media links -->
+        <a href="https://facebook.com" target="_blank">
+            <img class="social-media" src="images/facebook-small.webp" alt="Facebook Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img class="social-media" src="images/x-icon-small.webp" alt="X Icon" width="100" height="100"
+                loading="lazy">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img class="social-media" src="images/instagram-small.webp" alt="Instagram Icon" width="130" height="100"
+                loading="lazy">
+        </a>
+    </footer>
+
+    <!-- scripts -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

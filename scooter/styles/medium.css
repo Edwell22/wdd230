@@ -1,0 +1,46 @@
+@media only screen and (min-width: 40em) {
+
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        align-items: center;
+    }
+
+    #logo-link {
+        width: 150px;
+        height: auto;
+        grid-column: 1/2;
+        padding-left: 2%;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-column: 2/3;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        margin-top: 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #last-motto {
+        font-size: larger;
+    }
+}

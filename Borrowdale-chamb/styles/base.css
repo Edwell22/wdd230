@@ -312,7 +312,7 @@ form fieldset {
     margin: 2rem 0;
     border: 1px solid #000;
     border-radius: 10px;
-    padding: 0.5rem 2%;
+    padding: 60px;
     background-color: rgba(0,0,0,0.1);
 }
 

@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&family=Underdog&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Underdog', sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    text-align: center;
+    font-weight: bolder;
+    color: #25450D;
+    background-color: #f5f5f5;
+}
+
+content {
+    margin: 0 auto;
+}
+
+/* ----- Header ----- */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #CBCFF3;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+#logo-link {
+    width: 230px;
+    height: auto;
+    margin: 3%;
+    padding: 2%;
+}
+
+#logo-link:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/* ----- Hamburger Button ----- */
+#menu {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    background-color: #CBCFF3;
+    border: 3px ridge #25450D;
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    font-size: 2.4em;
+}
+
+#menu:hover {
+    transform: scale(1.1);
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.open::before {
+    content: '✖';
+}
+
+/* ----- Navigation ----- */
+.navigation {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #25450D;
+    padding: 2%;
+    font-size: larger;
+}
+
+.open {
+    display: block;
+}
+
+/* ----- Hover Styles ----- */
+.navigation a:hover {
+    color: #CBCFF3;
+    background-color: #25450D;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.active::before {
+    content: "*";
+}
+
+.active::after {
+    content: "*";
+}
+
+/* ----- Home Image Styles ----- */
+
+.info-grid {
+    display: block;
+    height: auto;
+}
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding-bottom: 0;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#last-motto,
+#hero-msg h1 {
+    background-color: rgb(179, 183, 219, .7);
+    border-radius: 20px;
+    border: 1px groove #25450D;
+    padding: 2%;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.button-box a {
+    text-decoration: none;
+    background-color: #CBCFF3;
+    color: #25450D;
+    padding: 2%;
+    border: 3px ridge #25450D;
+    border-radius: 15px;
+}
+
+.button-box a:hover {
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.button-box:hover {
+    transform: scale(1.1);
+}
+
+/* ----- Main Styles ----- */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5% auto;
+    width: 95%;
+    gap: 1.5%;
+}
+
+.info-grid section {
+    border: 10px ridge #25450D;
+    background-color: #CBCFF3;
+    border-radius: 25px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info-grid section p {
+    padding: 1%;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0px 0px;
+    border-bottom: 10px groove #25450D;
+}
+
+.icon {
+    max-width: 80px;
+    height: auto;
+    margin-top: 2%;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    box-shadow: 2px 3px 3px 1px #25450D;
+    border-radius: 15px;
+}
+
+
+/* ----- weather card styles ----- */
+#current-weather,
+#forecast-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3em;
+}
+
+#current,
+#forecast {
+    grid-column: 1/3;
+}
+
+.location-info,
+.location-forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+#del-carmen,
+#del-carmen-forecast {
+    border-right: 5px groove #25450D;
+}
+
+.weather-grid,
+.description {
+    grid-column: 1/3;
+    margin: 0;
+}
+
+.temp-display {
+    align-self: center;
+    justify-self: right;
+    margin-right: 10px;
+    margin: 0;
+}
+
+#carmen-icon,
+#puerta-icon {
+    align-self: center;
+    justify-self: left;
+    margin-left: 5px;
+    margin: 0;
+}
+
+#tomorrow-carmen-forecast,
+#tomorrow-puerta-forecast {
+    align-self: center;
+    margin-left: 5px;
+    margin: 0;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+#contract li {
+    text-align: left;
+    padding: 3%;
+}
+
+/* table styles */
+table {
+    border: 5px ridge #25450D;
+    border-radius: 15px;
+    border-collapse: collapse;
+    width: 96%;
+    margin: 2%;
+    padding: 3%;
+}
+
+th,
+td {
+    border: 2px ridge #25450D;
+    padding: 1%;
+}
+
+/* contact form */
+
+#contact-form label,
+#rental-form label {
+    display: block;
+    text-align: left;
+    margin: 1%;
+    padding: 1%;
+}
+
+fieldset {
+    border: 5px ridge #25450D;
+    margin: 2%;
+}
+
+legend {
+    padding: 1%;
+}
+
+#confirmed {
+    background-color: #25450D;
+    border: 2px groove #CBCFF3;
+    border-radius: 15px;
+    color: #CBCFF3;
+    padding: 2%;
+    margin: 2%;
+    font-size: 1.2rem;
+}
+
+input[type=date],
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px ridge #25450D;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: .2rem;
+}
+
+input[type=submit] {
+    border: 2px ridge #25450D;
+    border-radius: 6px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    margin: 2%;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.2);
+    border: 2px ridge #CBCFF3;
+    color: #CBCFF3;
+    background-color: #25450D;
+}
+
+form label input:required {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+form label input:required:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
+form label select:required {
+    border-left: rgb(131, 0, 0) solid 6px;
+}
+
+form label select:required:valid {
+    border-left: rgb(0, 100, 0) solid 6px;
+}
+
+/* ----- Contact Us ----- */
+.maps {
+    width: max-content;
+    padding: 0;
+    margin: 0;
+    border-radius: 15px;
+}
+
+
+
+
+/* ----- Footer Styles ----- */
+footer {
+    background-color: #CBCFF3;
+    padding: 2%;
+    margin-top: 60%;
+}
+
+#last {
+    margin-top: -30px;
+}
+
+#last-motto {
+    font-size: medium;
+}
+
+footer a {
+    text-decoration: none;
+    color: #25450D;
+}
+
+#resources::before {
+    content: "📃 ";
+}
+
+.social-media {
+    width: auto;
+    height: 50px;
+}
+
+.social-media:hover {
+    transform: scale(1.1);
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}

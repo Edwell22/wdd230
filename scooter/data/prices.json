@@ -1,0 +1,84 @@
+{
+    "prices": [
+        {
+            "scooter": [
+                {
+                    "model": "Honda Metro Scooter",
+                    "maxPersons": "1",
+                    "reservation": {
+                        "half": "$20",
+                        "full": "$30"
+                    },
+                    "walk-in": {
+                        "half": "$25",
+                        "full": "$35"
+                    }
+                },
+                {
+                    "model": "Honda Dio Scooter",
+                    "maxPersons": "2",
+                    "reservation": {
+                        "half": "$30",
+                        "full": "$40"
+                    },
+                    "walk-in": {
+                        "half": "$35",
+                        "full": "$45"
+                    }
+                },
+                {
+                    "model": "Honda PCX150 Scooter",
+                    "maxPersons": "2",
+                    "reservation": {
+                        "half": "$40",
+                        "full": "$50"
+                    },
+                    "walk-in": {
+                        "half": "$45",
+                        "full": "$55"
+                    }
+                }
+            ],
+            "atv": [
+                {
+                    "model": "Honda Pioneer ATV",
+                    "maxPersons": "4",
+                    "reservation": {
+                        "half": "$50",
+                        "full": "$70"
+                    },
+                    "walk-in": {
+                        "half": "$60",
+                        "full": "$80"
+                    }
+                }
+            ],
+            "jeep": [
+                {
+                    "model": "Jeep Wrangler - 4 door with A/C",
+                    "maxPersons": "5",
+                    "reservation": {
+                        "half": "$70",
+                        "full": "$100"
+                    },
+                    "walk-in": {
+                        "half": "$85",
+                        "full": "$125"
+                    }
+                },
+                {
+                    "model": "Jeep Wrangler - 2 door",
+                    "maxPersons": "4",
+                    "reservation": {
+                        "half": "$60",
+                        "full": "$85"
+                    },
+                    "walk-in": {
+                        "half": "$70",
+                        "full": "$90"
+                    }
+                }
+            ]
+        }
+    ]
+}
