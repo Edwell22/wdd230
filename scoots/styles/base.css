@@ -11,7 +11,7 @@ body {
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     text-align: center;
     font-weight: bolder;
-    color: #25450D;
+    color: hsl(234, 88%, 13%);
     background-color: #f5f5f5;
 }
 
@@ -24,7 +24,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #CBCFF3;
+    background-color: #57bcdb;
     position: relative;
     text-align: center;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
@@ -48,8 +48,8 @@ header {
     position: absolute;
     top: 8%;
     right: 3%;
-    background-color: #CBCFF3;
-    border: 3px ridge #25450D;
+    background-color: #a3abf7;
+    border: 3px ridge hsl(234, 88%, 13%);
     border-radius: 10px;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
     font-size: 2.4em;
@@ -76,7 +76,7 @@ header {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #25450D;
+    color: hsl(234, 88%, 13%);
     padding: 2%;
     font-size: larger;
 }
@@ -87,8 +87,8 @@ header {
 
 /* ----- Hover Styles ----- */
 .navigation a:hover {
-    color: #CBCFF3;
-    background-color: #25450D;
+    color: rgba(155, 162, 228, 0.7);
+    background-color: hsl(234, 88%, 13%);
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
@@ -130,9 +130,9 @@ header {
 
 #last-motto,
 #hero-msg h1 {
-    background-color: rgb(179, 183, 219, .7);
+    background-color: rgba(155, 162, 228, 0.7);
     border-radius: 20px;
-    border: 1px groove #25450D;
+    border: 1px groove hsl(234, 88%, 13%);
     padding: 2%;
 }
 
@@ -143,10 +143,10 @@ header {
 
 .button-box a {
     text-decoration: none;
-    background-color: #CBCFF3;
-    color: #25450D;
+    background-color: rgba(155, 162, 228, 0.7);
+    color: hsl(234, 88%, 13%);
     padding: 2%;
-    border: 3px ridge #25450D;
+    border: 3px ridge hsl(234, 88%, 13%);
     border-radius: 15px;
 }
 
@@ -168,8 +168,8 @@ header {
 }
 
 .info-grid section {
-    border: 10px ridge #25450D;
-    background-color: #CBCFF3;
+    border: 10px ridge hsl(234, 88%, 13%);
+    background-color: rgba(155, 162, 228, 0.7);
     border-radius: 25px;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
@@ -182,7 +182,7 @@ header {
     width: 100%;
     height: auto;
     border-radius: 12px 12px 0px 0px;
-    border-bottom: 10px groove #25450D;
+    border-bottom: 10px groove hsl(234, 88%, 13%);
 }
 
 .icon {
@@ -193,7 +193,7 @@ header {
 
 .icon:hover {
     transform: scale(1.3);
-    box-shadow: 2px 3px 3px 1px #25450D;
+    box-shadow: 2px 3px 3px 1px hsl(234, 88%, 13%);
     border-radius: 15px;
 }
 
@@ -220,7 +220,7 @@ header {
 
 #del-carmen,
 #del-carmen-forecast {
-    border-right: 5px groove #25450D;
+    border-right: 5px groove hsl(234, 88%, 13%);
 }
 
 .weather-grid,
@@ -262,7 +262,7 @@ header {
 
 /* table styles */
 table {
-    border: 5px ridge #25450D;
+    border: 5px ridge hsl(234, 88%, 13%);
     border-radius: 15px;
     border-collapse: collapse;
     width: 96%;
@@ -272,7 +272,7 @@ table {
 
 th,
 td {
-    border: 2px ridge #25450D;
+    border: 2px ridge hsl(234, 88%, 13%);
     padding: 1%;
 }
 
@@ -287,7 +287,7 @@ td {
 }
 
 fieldset {
-    border: 5px ridge #25450D;
+    border: 5px ridge hsl(234, 88%, 13%);
     margin: 2%;
 }
 
@@ -296,10 +296,10 @@ legend {
 }
 
 #confirmed {
-    background-color: #25450D;
-    border: 2px groove #CBCFF3;
+    background-color: hsl(234, 88%, 13%);
+    border: 2px groove rgba(155, 162, 228, 0.7);
     border-radius: 15px;
-    color: #CBCFF3;
+    color: rgba(155, 162, 228, 0.7);
     padding: 2%;
     margin: 2%;
     font-size: 1.2rem;
@@ -313,14 +313,14 @@ textarea,
 select {
     width: 100%;
     padding: 12px;
-    border: 2px ridge #25450D;
+    border: 2px ridge hsl(234, 88%, 13%);
     border-radius: 6px;
     box-sizing: border-box;
     margin-top: .2rem;
 }
 
 input[type=submit] {
-    border: 2px ridge #25450D;
+    border: 2px ridge hsl(234, 88%, 13%);
     border-radius: 6px;
     box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
     margin: 2%;
@@ -330,25 +330,25 @@ input[type=submit] {
 
 input[type=submit]:hover {
     transform: scale(1.2);
-    border: 2px ridge #CBCFF3;
-    color: #CBCFF3;
-    background-color: #25450D;
+    border: 2px ridge rgba(155, 162, 228, 0.7);
+    color: rgba(155, 162, 228, 0.7);
+    background-color: hsl(234, 88%, 13%);
 }
 
 form label input:required {
-    border-left: rgb(131, 0, 0) solid 6px;
+    border-left: rgb(32, 31, 31) solid 6px;
 }
 
 form label input:required:valid {
-    border-left: rgb(0, 100, 0) solid 6px;
+    border-left: hsl(234, 88%, 13%) solid 6px;
 }
 
 form label select:required {
-    border-left: rgb(131, 0, 0) solid 6px;
+    border-left: rgb(32, 31, 31) solid 6px;
 }
 
 form label select:required:valid {
-    border-left: rgb(0, 100, 0) solid 6px;
+    border-left: hsl(234, 88%, 13%) solid 6px;
 }
 
 /* ----- Contact Us ----- */
@@ -364,7 +364,7 @@ form label select:required:valid {
 
 /* ----- Footer Styles ----- */
 footer {
-    background-color: #CBCFF3;
+    background-color: #57bcdb;
     padding: 2%;
     margin-top: 60%;
 }
@@ -379,7 +379,7 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #25450D;
+    color: hsl(234, 88%, 13%);
 }
 
 #resources::before {
